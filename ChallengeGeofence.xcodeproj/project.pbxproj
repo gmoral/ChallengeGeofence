@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D5CB644CDF624D5069FC87D /* Pods_ChallengeGeofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D275E94166090FE4A422C1 /* Pods_ChallengeGeofence.framework */; };
+		7CE6446DDCB7EFD69F6605B7 /* Pods_ChallengeGeofenceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413023BB37F6F0D0F969974D /* Pods_ChallengeGeofenceTests.framework */; };
+		B328E2D226CAD90E006E0FC5 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665326CAD21C001ED03C /* Events.swift */; };
+		B328E2D326CAD913006E0FC5 /* FirebaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665726CAD2BB001ED03C /* FirebaseLogger.swift */; };
+		B345115726C89742008D8705 /* GeofenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345115626C89742008D8705 /* GeofenceViewModel.swift */; };
+		B3A0664D26CA9956001ED03C /* ApiClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E1626C8832100228A25 /* ApiClientSpy.swift */; };
+		B3A0664E26CA9A06001ED03C /* GeofenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345115626C89742008D8705 /* GeofenceViewModel.swift */; };
+		B3A0665026CAA4EC001ED03C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3A0664F26CAA4EC001ED03C /* GoogleService-Info.plist */; };
+		B3A0665426CAD21C001ED03C /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665326CAD21C001ED03C /* Events.swift */; };
+		B3A0665626CAD25A001ED03C /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665526CAD25A001ED03C /* LoggerProtocol.swift */; };
+		B3A0665826CAD2BB001ED03C /* FirebaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665726CAD2BB001ED03C /* FirebaseLogger.swift */; };
+		B3A0665A26CAD878001ED03C /* FirebaseLoggerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665926CAD878001ED03C /* FirebaseLoggerSpy.swift */; };
+		B3A0665B26CAD8B3001ED03C /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0665526CAD25A001ED03C /* LoggerProtocol.swift */; };
+		B3DA3DD126C8824D00228A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DD026C8824D00228A25 /* AppDelegate.swift */; };
+		B3DA3DD326C8824D00228A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DD226C8824D00228A25 /* SceneDelegate.swift */; };
+		B3DA3DD526C8824D00228A25 /* GeofenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DD426C8824D00228A25 /* GeofenceViewController.swift */; };
+		B3DA3DD826C8824D00228A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3DD626C8824D00228A25 /* Main.storyboard */; };
+		B3DA3DDA26C8824E00228A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3DD926C8824E00228A25 /* Assets.xcassets */; };
+		B3DA3DDD26C8824E00228A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3DDB26C8824E00228A25 /* LaunchScreen.storyboard */; };
+		B3DA3DEB26C8826D00228A25 /* ChallengeGeofenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DEA26C8826D00228A25 /* ChallengeGeofenceTests.swift */; };
+		B3DA3DF826C882BE00228A25 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF326C882BE00228A25 /* RequestHelper.swift */; };
+		B3DA3DF926C882BE00228A25 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF326C882BE00228A25 /* RequestHelper.swift */; };
+		B3DA3DFA26C882BE00228A25 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF426C882BE00228A25 /* URLRequest+Extension.swift */; };
+		B3DA3DFB26C882BE00228A25 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF426C882BE00228A25 /* URLRequest+Extension.swift */; };
+		B3DA3DFC26C882BE00228A25 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF526C882BE00228A25 /* ApiClient.swift */; };
+		B3DA3DFD26C882BE00228A25 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF526C882BE00228A25 /* ApiClient.swift */; };
+		B3DA3DFE26C882BE00228A25 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF626C882BE00228A25 /* HTTP.swift */; };
+		B3DA3DFF26C882BE00228A25 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF626C882BE00228A25 /* HTTP.swift */; };
+		B3DA3E0026C882BE00228A25 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF726C882BE00228A25 /* Header.swift */; };
+		B3DA3E0126C882BE00228A25 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3DF726C882BE00228A25 /* Header.swift */; };
+		B3DA3E0626C882E500228A25 /* Geofences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0326C882E500228A25 /* Geofences.swift */; };
+		B3DA3E0726C882E500228A25 /* Geofences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0326C882E500228A25 /* Geofences.swift */; };
+		B3DA3E0826C882E500228A25 /* Geofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0426C882E500228A25 /* Geofence.swift */; };
+		B3DA3E0926C882E500228A25 /* Geofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0426C882E500228A25 /* Geofence.swift */; };
+		B3DA3E0A26C882E500228A25 /* Gpx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0526C882E500228A25 /* Gpx.swift */; };
+		B3DA3E0B26C882E500228A25 /* Gpx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E0526C882E500228A25 /* Gpx.swift */; };
+		B3DA3E0F26C882FF00228A25 /* Target.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3E0D26C882FF00228A25 /* Target.gpx */; };
+		B3DA3E1026C882FF00228A25 /* Target.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3E0D26C882FF00228A25 /* Target.gpx */; };
+		B3DA3E1126C882FF00228A25 /* Lavalle-Street.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3E0E26C882FF00228A25 /* Lavalle-Street.gpx */; };
+		B3DA3E1226C882FF00228A25 /* Lavalle-Street.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B3DA3E0E26C882FF00228A25 /* Lavalle-Street.gpx */; };
+		B3DA3E1426C8831200228A25 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E1326C8831200228A25 /* LocationService.swift */; };
+		B3DA3E1526C8831200228A25 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E1326C8831200228A25 /* LocationService.swift */; };
+		B3DA3E1726C8832100228A25 /* ApiClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA3E1626C8832100228A25 /* ApiClientSpy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3DA3DED26C8826D00228A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3DA3DC526C8824D00228A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3DA3DCC26C8824D00228A25;
+			remoteInfo = ChallengeGeofence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30D275E94166090FE4A422C1 /* Pods_ChallengeGeofence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeGeofence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413023BB37F6F0D0F969974D /* Pods_ChallengeGeofenceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeGeofenceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A229FFED3F4CF53B4E8FCC /* Pods-ChallengeGeofence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeGeofence.release.xcconfig"; path = "Target Support Files/Pods-ChallengeGeofence/Pods-ChallengeGeofence.release.xcconfig"; sourceTree = "<group>"; };
+		B345115626C89742008D8705 /* GeofenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceViewModel.swift; sourceTree = "<group>"; };
+		B3A0664F26CAA4EC001ED03C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3A0665326CAD21C001ED03C /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		B3A0665526CAD25A001ED03C /* LoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		B3A0665726CAD2BB001ED03C /* FirebaseLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogger.swift; sourceTree = "<group>"; };
+		B3A0665926CAD878001ED03C /* FirebaseLoggerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoggerSpy.swift; sourceTree = "<group>"; };
+		B3DA3DCD26C8824D00228A25 /* ChallengeGeofence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeGeofence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DA3DD026C8824D00228A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3DA3DD226C8824D00228A25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3DA3DD426C8824D00228A25 /* GeofenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceViewController.swift; sourceTree = "<group>"; };
+		B3DA3DD726C8824D00228A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3DA3DD926C8824E00228A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3DA3DDC26C8824E00228A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3DA3DDE26C8824E00228A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DA3DE826C8826D00228A25 /* ChallengeGeofenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeGeofenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DA3DEA26C8826D00228A25 /* ChallengeGeofenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGeofenceTests.swift; sourceTree = "<group>"; };
+		B3DA3DEC26C8826D00228A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DA3DF326C882BE00228A25 /* RequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHelper.swift; sourceTree = "<group>"; };
+		B3DA3DF426C882BE00228A25 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		B3DA3DF526C882BE00228A25 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B3DA3DF626C882BE00228A25 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		B3DA3DF726C882BE00228A25 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		B3DA3E0326C882E500228A25 /* Geofences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geofences.swift; sourceTree = "<group>"; };
+		B3DA3E0426C882E500228A25 /* Geofence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geofence.swift; sourceTree = "<group>"; };
+		B3DA3E0526C882E500228A25 /* Gpx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gpx.swift; sourceTree = "<group>"; };
+		B3DA3E0D26C882FF00228A25 /* Target.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Target.gpx; sourceTree = "<group>"; };
+		B3DA3E0E26C882FF00228A25 /* Lavalle-Street.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Lavalle-Street.gpx"; sourceTree = "<group>"; };
+		B3DA3E1326C8831200228A25 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B3DA3E1626C8832100228A25 /* ApiClientSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientSpy.swift; sourceTree = "<group>"; };
+		C54421A4FDD86C758090194C /* Pods-ChallengeGeofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeGeofence.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeGeofence/Pods-ChallengeGeofence.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6EA502D912536747D71013 /* Pods-ChallengeGeofenceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeGeofenceTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeGeofenceTests/Pods-ChallengeGeofenceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD4FF890DF4B60FD683B241 /* Pods-ChallengeGeofenceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeGeofenceTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeGeofenceTests/Pods-ChallengeGeofenceTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3DA3DCA26C8824D00228A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5CB644CDF624D5069FC87D /* Pods_ChallengeGeofence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DA3DE526C8826D00228A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE6446DDCB7EFD69F6605B7 /* Pods_ChallengeGeofenceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51E4FE7DB7AC8EF429939643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D275E94166090FE4A422C1 /* Pods_ChallengeGeofence.framework */,
+				413023BB37F6F0D0F969974D /* Pods_ChallengeGeofenceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0F41C157E7CB1D4CB8308FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C54421A4FDD86C758090194C /* Pods-ChallengeGeofence.debug.xcconfig */,
+				68A229FFED3F4CF53B4E8FCC /* Pods-ChallengeGeofence.release.xcconfig */,
+				FE6EA502D912536747D71013 /* Pods-ChallengeGeofenceTests.debug.xcconfig */,
+				FFD4FF890DF4B60FD683B241 /* Pods-ChallengeGeofenceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B345115526C89726008D8705 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B345115626C89742008D8705 /* GeofenceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3A0665226CAD205001ED03C /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				B3A0665326CAD21C001ED03C /* Events.swift */,
+				B3A0665526CAD25A001ED03C /* LoggerProtocol.swift */,
+				B3A0665726CAD2BB001ED03C /* FirebaseLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		B3DA3DC426C8824D00228A25 = {
+			isa = PBXGroup;
+			children = (
+				B3A0665226CAD205001ED03C /* Logger */,
+				B3DA3E0C26C882EC00228A25 /* GPX */,
+				B3DA3E0226C882D600228A25 /* Model */,
+				B3DA3DF226C882AD00228A25 /* Services */,
+				B3DA3DCF26C8824D00228A25 /* ChallengeGeofence */,
+				B3DA3DE926C8826D00228A25 /* ChallengeGeofenceTests */,
+				B3DA3DCE26C8824D00228A25 /* Products */,
+				B0F41C157E7CB1D4CB8308FC /* Pods */,
+				51E4FE7DB7AC8EF429939643 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3DA3DCE26C8824D00228A25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3DA3DCD26C8824D00228A25 /* ChallengeGeofence.app */,
+				B3DA3DE826C8826D00228A25 /* ChallengeGeofenceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3DA3DCF26C8824D00228A25 /* ChallengeGeofence */ = {
+			isa = PBXGroup;
+			children = (
+				B345115526C89726008D8705 /* ViewModel */,
+				B3DA3DD026C8824D00228A25 /* AppDelegate.swift */,
+				B3DA3DD226C8824D00228A25 /* SceneDelegate.swift */,
+				B3DA3DD426C8824D00228A25 /* GeofenceViewController.swift */,
+				B3DA3E1326C8831200228A25 /* LocationService.swift */,
+				B3DA3DD626C8824D00228A25 /* Main.storyboard */,
+				B3DA3DD926C8824E00228A25 /* Assets.xcassets */,
+				B3DA3DDB26C8824E00228A25 /* LaunchScreen.storyboard */,
+				B3DA3DDE26C8824E00228A25 /* Info.plist */,
+				B3A0664F26CAA4EC001ED03C /* GoogleService-Info.plist */,
+			);
+			path = ChallengeGeofence;
+			sourceTree = "<group>";
+		};
+		B3DA3DE926C8826D00228A25 /* ChallengeGeofenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3A0665926CAD878001ED03C /* FirebaseLoggerSpy.swift */,
+				B3DA3E1626C8832100228A25 /* ApiClientSpy.swift */,
+				B3DA3DEA26C8826D00228A25 /* ChallengeGeofenceTests.swift */,
+				B3DA3DEC26C8826D00228A25 /* Info.plist */,
+			);
+			path = ChallengeGeofenceTests;
+			sourceTree = "<group>";
+		};
+		B3DA3DF226C882AD00228A25 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3DA3DF526C882BE00228A25 /* ApiClient.swift */,
+				B3DA3DF726C882BE00228A25 /* Header.swift */,
+				B3DA3DF626C882BE00228A25 /* HTTP.swift */,
+				B3DA3DF326C882BE00228A25 /* RequestHelper.swift */,
+				B3DA3DF426C882BE00228A25 /* URLRequest+Extension.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3DA3E0226C882D600228A25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3DA3E0426C882E500228A25 /* Geofence.swift */,
+				B3DA3E0326C882E500228A25 /* Geofences.swift */,
+				B3DA3E0526C882E500228A25 /* Gpx.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3DA3E0C26C882EC00228A25 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				B3DA3E0E26C882FF00228A25 /* Lavalle-Street.gpx */,
+				B3DA3E0D26C882FF00228A25 /* Target.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3DA3DCC26C8824D00228A25 /* ChallengeGeofence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DA3DE126C8824E00228A25 /* Build configuration list for PBXNativeTarget "ChallengeGeofence" */;
+			buildPhases = (
+				86F73E814F7A0D78606AC50F /* [CP] Check Pods Manifest.lock */,
+				B3DA3DC926C8824D00228A25 /* Sources */,
+				B3DA3DCA26C8824D00228A25 /* Frameworks */,
+				B3DA3DCB26C8824D00228A25 /* Resources */,
+				2CE2693CD687C1FD17595A3D /* [CP] Embed Pods Frameworks */,
+				B3A0665126CAC29E001ED03C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChallengeGeofence;
+			productName = ChallengeGeofence;
+			productReference = B3DA3DCD26C8824D00228A25 /* ChallengeGeofence.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3DA3DE726C8826D00228A25 /* ChallengeGeofenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DA3DEF26C8826D00228A25 /* Build configuration list for PBXNativeTarget "ChallengeGeofenceTests" */;
+			buildPhases = (
+				8141B30901DD2ABCE943C8FE /* [CP] Check Pods Manifest.lock */,
+				B3DA3DE426C8826D00228A25 /* Sources */,
+				B3DA3DE526C8826D00228A25 /* Frameworks */,
+				B3DA3DE626C8826D00228A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3DA3DEE26C8826D00228A25 /* PBXTargetDependency */,
+			);
+			name = ChallengeGeofenceTests;
+			productName = ChallengeGeofenceTests;
+			productReference = B3DA3DE826C8826D00228A25 /* ChallengeGeofenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3DA3DC526C8824D00228A25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B3DA3DCC26C8824D00228A25 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B3DA3DE726C8826D00228A25 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B3DA3DCC26C8824D00228A25;
+					};
+				};
+			};
+			buildConfigurationList = B3DA3DC826C8824D00228A25 /* Build configuration list for PBXProject "ChallengeGeofence" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3DA3DC426C8824D00228A25;
+			productRefGroup = B3DA3DCE26C8824D00228A25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3DA3DCC26C8824D00228A25 /* ChallengeGeofence */,
+				B3DA3DE726C8826D00228A25 /* ChallengeGeofenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3DA3DCB26C8824D00228A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DA3E1126C882FF00228A25 /* Lavalle-Street.gpx in Resources */,
+				B3DA3DDD26C8824E00228A25 /* LaunchScreen.storyboard in Resources */,
+				B3DA3DDA26C8824E00228A25 /* Assets.xcassets in Resources */,
+				B3DA3E0F26C882FF00228A25 /* Target.gpx in Resources */,
+				B3DA3DD826C8824D00228A25 /* Main.storyboard in Resources */,
+				B3A0665026CAA4EC001ED03C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DA3DE626C8826D00228A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DA3E1226C882FF00228A25 /* Lavalle-Street.gpx in Resources */,
+				B3DA3E1026C882FF00228A25 /* Target.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE2693CD687C1FD17595A3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeGeofence/Pods-ChallengeGeofence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeGeofence/Pods-ChallengeGeofence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeGeofence/Pods-ChallengeGeofence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8141B30901DD2ABCE943C8FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeGeofenceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86F73E814F7A0D78606AC50F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeGeofence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A0665126CAC29E001ED03C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3DA3DC926C8824D00228A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DA3E0026C882BE00228A25 /* Header.swift in Sources */,
+				B3A0665626CAD25A001ED03C /* LoggerProtocol.swift in Sources */,
+				B3DA3DFA26C882BE00228A25 /* URLRequest+Extension.swift in Sources */,
+				B3DA3E1726C8832100228A25 /* ApiClientSpy.swift in Sources */,
+				B3DA3DD526C8824D00228A25 /* GeofenceViewController.swift in Sources */,
+				B3DA3DFE26C882BE00228A25 /* HTTP.swift in Sources */,
+				B3DA3E0626C882E500228A25 /* Geofences.swift in Sources */,
+				B345115726C89742008D8705 /* GeofenceViewModel.swift in Sources */,
+				B3DA3DD126C8824D00228A25 /* AppDelegate.swift in Sources */,
+				B3DA3E0A26C882E500228A25 /* Gpx.swift in Sources */,
+				B3A0665426CAD21C001ED03C /* Events.swift in Sources */,
+				B3DA3DD326C8824D00228A25 /* SceneDelegate.swift in Sources */,
+				B3DA3E0826C882E500228A25 /* Geofence.swift in Sources */,
+				B3DA3DF826C882BE00228A25 /* RequestHelper.swift in Sources */,
+				B3DA3E1426C8831200228A25 /* LocationService.swift in Sources */,
+				B3A0665826CAD2BB001ED03C /* FirebaseLogger.swift in Sources */,
+				B3DA3DFC26C882BE00228A25 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DA3DE426C8826D00228A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328E2D326CAD913006E0FC5 /* FirebaseLogger.swift in Sources */,
+				B3DA3DFF26C882BE00228A25 /* HTTP.swift in Sources */,
+				B3DA3E0B26C882E500228A25 /* Gpx.swift in Sources */,
+				B3DA3E1526C8831200228A25 /* LocationService.swift in Sources */,
+				B3A0665A26CAD878001ED03C /* FirebaseLoggerSpy.swift in Sources */,
+				B3DA3DEB26C8826D00228A25 /* ChallengeGeofenceTests.swift in Sources */,
+				B3DA3DFB26C882BE00228A25 /* URLRequest+Extension.swift in Sources */,
+				B3DA3DF926C882BE00228A25 /* RequestHelper.swift in Sources */,
+				B3A0665B26CAD8B3001ED03C /* LoggerProtocol.swift in Sources */,
+				B3A0664E26CA9A06001ED03C /* GeofenceViewModel.swift in Sources */,
+				B328E2D226CAD90E006E0FC5 /* Events.swift in Sources */,
+				B3DA3E0126C882BE00228A25 /* Header.swift in Sources */,
+				B3DA3E0926C882E500228A25 /* Geofence.swift in Sources */,
+				B3DA3E0726C882E500228A25 /* Geofences.swift in Sources */,
+				B3A0664D26CA9956001ED03C /* ApiClientSpy.swift in Sources */,
+				B3DA3DFD26C882BE00228A25 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3DA3DEE26C8826D00228A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3DA3DCC26C8824D00228A25 /* ChallengeGeofence */;
+			targetProxy = B3DA3DED26C8826D00228A25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3DA3DD626C8824D00228A25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DA3DD726C8824D00228A25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3DA3DDB26C8824E00228A25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DA3DDC26C8824E00228A25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3DA3DDF26C8824E00228A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3DA3DE026C8824E00228A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3DA3DE226C8824E00228A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54421A4FDD86C758090194C /* Pods-ChallengeGeofence.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KZ7KQ2PBS3;
+				INFOPLIST_FILE = ChallengeGeofence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = gm.ChallengeGeofence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3DA3DE326C8824E00228A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A229FFED3F4CF53B4E8FCC /* Pods-ChallengeGeofence.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KZ7KQ2PBS3;
+				INFOPLIST_FILE = ChallengeGeofence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = gm.ChallengeGeofence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3DA3DF026C8826D00228A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6EA502D912536747D71013 /* Pods-ChallengeGeofenceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ7KQ2PBS3;
+				INFOPLIST_FILE = ChallengeGeofenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gm.ChallengeGeofenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeGeofence.app/ChallengeGeofence";
+			};
+			name = Debug;
+		};
+		B3DA3DF126C8826D00228A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD4FF890DF4B60FD683B241 /* Pods-ChallengeGeofenceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ7KQ2PBS3;
+				INFOPLIST_FILE = ChallengeGeofenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gm.ChallengeGeofenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeGeofence.app/ChallengeGeofence";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3DA3DC826C8824D00228A25 /* Build configuration list for PBXProject "ChallengeGeofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DA3DDF26C8824E00228A25 /* Debug */,
+				B3DA3DE026C8824E00228A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DA3DE126C8824E00228A25 /* Build configuration list for PBXNativeTarget "ChallengeGeofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DA3DE226C8824E00228A25 /* Debug */,
+				B3DA3DE326C8824E00228A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DA3DEF26C8826D00228A25 /* Build configuration list for PBXNativeTarget "ChallengeGeofenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DA3DF026C8826D00228A25 /* Debug */,
+				B3DA3DF126C8826D00228A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3DA3DC526C8824D00228A25 /* Project object */;
+}

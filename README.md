@@ -1,6 +1,6 @@
 # ChallengeGeofence
 Background
-Clients see value in understanding space and occupancy utilization of commercial buildings. The research shows that cohesion can leverage its mobile app to get anonymized building occupancy data. We can use access control integration with geofence triggers to better understand the entry/exist patterns of our users.
+Clients see value in understanding space and occupancy utilization of commercial buildings. The research shows that we can leverage its mobile app to get anonymized building occupancy data. We can use access control integration with geofence triggers to better understand the entry/exist patterns of our users.
 The candidate is asked to develop a sample app using the geofencing feature to achieve the goal. Rules of the game
 1. The candidate is expected to spend no more than 4 hours on this exercise.
 2. We will review and discuss the submitted solution during an on-site technical deep-dive interview with the
